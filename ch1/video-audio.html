@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video - Audio - Iframe</title>
+</head>
+<body>
+    <!-- Εμφανίζει ένα video από αρχείο -->
+    <video width="320" height="240" controls>
+        <source src=".../img/aaa.mp4">
+        Your browser does not support the video tag
+    </video>
+
+    <!-- Εμφανίζει έναν ήχο από αρχείο -->
+    <audio controls>
+        <source src=".../img/">
+    </audio>
+
+    <!-- Εμφανίζει ένα video από άλλη σελίδα -->
+     <!-- (Από το share του youtube, επιλογή embed, copy) -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ihy0QziLDf0?si=3cXSuOeN8IkNUf5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Δίνει τη δυνατότητα στη σελίδα μας να εμφανίσει μια άλλη σελίδα -->
+    <iframe src="./tables.html" frameborder="0"></iframe>
+
+    <!-- Ίδια χρησιμότητα με div για ευκολία του screen reader -->
+    <nav></nav>
+    <section></section>
+    <footer></footer>
+    <header></header>
+</body>
+</html>
