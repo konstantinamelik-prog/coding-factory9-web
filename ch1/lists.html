@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists in HTML</title>
+</head>
+<body>
+    <!-- Λίστα με bullets -->
+    <h2>Unordered list</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <!-- Λίστα με αρίθμιση -->
+    <h2>Ordered list</h2>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <!-- ol>li*3 -->
+    <!-- Να μετράει με i, ii, iii, ... + reversed φθίνουσα σειρά -->
+    <ol type="i" reversed>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <!-- Να ξεκιναει την αρίθμηση από το 15 -->
+    <ol start="15">
+        <li>Data</li>
+        <li>Data</li>
+        <li>Data</li>
+        <li>Data</li>
+        <li>Data</li>
+    </ol>
+
+    <h2>Description list</h2>
+    <!-- Description list -->
+    <dl>
+        <!-- Title -->
+        <dt>What is HTML</dt>
+        <!-- Data -->
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut quis qui facere, dolorem, deserunt officia deleniti enim atque dolor sint? Minima iusto doloribus quasi odit consequuntur nesciunt quibusdam repellendus.</dd>
+
+        <dt>What is CSS</dt>
+        <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima asperiores error ipsam eos doloremque non sapiente esse, neque, nisi sit illum ad? Quasi consectetur nobis quidem dolore consequatur provident nemo.</dd>
+    </dl>
+
+    <!-- Συνδυασμός λιστών. Μέσα σε Unordered list βάζω μια Ordered list-->
+    <h2>Ordered & Unordered Lists</h2>
+    <ul>
+        <li> HTML
+            <ol>
+                <li>Basic Tags</li>
+                <li>Heading</li>
+                <li>Tables</li>
+            </ol>
+        </li>
+        <li> CSS
+            <ol>
+                <li>Selectors</li>
+                <li>Attlibutes</li>
+            </ol>
+        </li>
+    </ul>
+
+    <!-- ul>li*2>ol>li*2 -->
+    <ul>
+        <li>
+            <ol>
+                <li></li>
+                <li></li>
+            </ol>
+        </li>
+        <li>
+            <ol>
+                <li></li>
+                <li></li>
+            </ol>
+        </li>
+    </ul>
+
+</body>
+</html>
