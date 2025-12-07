@@ -13,7 +13,7 @@
         <div>
             <!-- Radio = κουκκίδες. 
              Με το ίδιο όνομα, μπορείς να επιλέξεις μόνο ένα από αυτά -->
-            <input type="radio" name="gender" value="male" id="fldMale" ckecked>
+            <input type="radio" name="gender" value="male" id="fldMale" checked>
             <!-- for="id" για να μπορεί να επιλεχθεί το πεδίο ακόμα κι αν πατήσουμε το λεκτικό του και όχι την κουκκίδα -->
             <label for="fldMale">Άνδρας</label><br>
             <!-- br, για να τα βάλουμε το ένα κάτω από το άλλο (όχι ο πιο σωστός τρόπος) -->
@@ -46,23 +46,39 @@
         </div>
 
         <div>
-            <div>
-                <!-- Free text -->
-                <label for="fldFirstname">Όνομα:</label>
-                <!-- Placeholder: εμφανίζεται η εντολή στον χρήστη με θολά γράμματα.
-                Required: υποχρεωτική συμπλήρωση-->
-                <input type="text" name="firstname" id="fldFirstname" placeholder="Συμπληρώστε Όνομα" minlength="5" maxlength="15" required>
-            </div>
-            <div>
-                <!-- Count πεδίο με βελάκια αυξομείωσης -->
-                <label for="fldWorkExperience">Χρόνια προϋπηρεσίας:</label>
-                <input type="number" name="work-experience" id="fldWorkExperience" min="3" max="20">
-            </div>
-            <div>
-                <label for="fldEmail">Email:</label>
-                <input type="email" name="email" id="fldEmail">
-            </div>
+            <!-- Προσθέτουμε πλαίσιο με τίτλο -->
+            <fieldset>
+                <legend>Προσωπικά στοιχεία</legend>
+                <div>
+                    <!-- Free text -->
+                    <label for="fldFirstname">Όνομα:</label>
+                    <!-- Placeholder: εμφανίζεται η εντολή στον χρήστη με θολά γράμματα.
+                    Required: υποχρεωτική συμπλήρωση-->
+                    <input type="text" name="firstname" id="fldFirstname" placeholder="Συμπληρώστε Όνομα" minlength="5" maxlength="15" required>
+                </div>
+                <div>
+                    <!-- Count πεδίο με βελάκια αυξομείωσης -->
+                    <label for="fldWorkExperience">Χρόνια προϋπηρεσίας:</label>
+                    <input type="number" name="work-experience" id="fldWorkExperience" min="3" max="20">
+                </div>
+                <div>
+                    <label for="fldEmail">Email:</label>
+                    <input type="email" name="email" id="fldEmail">
+                </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <!-- Text area -->
+            <label for="fldMessage">Γράψτε το μήνυμά σας</label>
+            <textarea name="message" id="fldMessage" rows="10" cols="30"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Υποβολή">
+            <input type="reset" value="Καθάρισμα">
         </div>
     </form>
+
 </body>
 </html>
