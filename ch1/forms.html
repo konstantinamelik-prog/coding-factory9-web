@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>My First Form</h2>
+    <!-- Δημιουργία φόρμας -->
+    <form>
+        <!-- Διαχωρισμός ομάδας (για μελλοντική χρήση) -->
+        <div>
+            <!-- Radio = κουκκίδες. 
+             Με το ίδιο όνομα, μπορείς να επιλέξεις μόνο ένα από αυτά -->
+            <input type="radio" name="gender" value="male" id="fldMale" ckecked>
+            <!-- for="id" για να μπορεί να επιλεχθεί το πεδίο ακόμα κι αν πατήσουμε το λεκτικό του και όχι την κουκκίδα -->
+            <label for="fldMale">Άνδρας</label><br>
+            <!-- br, για να τα βάλουμε το ένα κάτω από το άλλο (όχι ο πιο σωστός τρόπος) -->
+            <input type="radio" name="gender" value="female" id="fldFemale">
+            <label for="fldFemale">Γυναίκα</label>
+        </div>
+
+        <div>
+            <!-- Checkbox = tick.
+            Διαφορετικό name για να μπορώ να επιλέξω περισσότερα από 1 -->
+            <!-- Checked, να έρχεται σαν προεπιλογή-->
+            <input type="checkbox" name="vehicle1" value="bike" id="fldBike" checked>
+            <label for="fldBike">Ποδήλατο</label><br>
+            <input type="checkbox" name="vehicle2" value="motorcycle" id="fldMotorcycle">
+            <label for="fldMotorcycle">Μοτοσυκλέτα</label><br>
+            <input type="checkbox" name="vehicle3" value="car" id="fldCar">
+            <label for="fldCar">Αυτοκίνητο</label>
+        </div>
+    </form>
+</body>
+</html>
