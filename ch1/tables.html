@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Tables</title>
+        <!-- Table styling -->
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tables in HTML</h1>
+        <table>
+            <!-- Τίτλος table -->
+            <caption>Lessons Program</caption>
+            <!-- Table row -->
+            <tr>
+                <!-- Table data / columns / κελιά -->
+                <td>Lesson</td>
+                <td>Teacher</td>
+                <td>Date/Time</td>
+            </tr>
+            <tr>
+            <td>Java</td>
+            <td>Thanasis</td>
+            <td>Monday 18:00-21:00</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Markos</td>
+                <td>Thursday 18:00-21:00</td>
+            </tr>
+        </table>
+
+        <br> 
+
+        <table>
+            <tr>
+                <!-- Table header -->
+                <th>Lesson</th>
+                <th>Teacher</th>
+                <th>Date/Time</th>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>Thanasis</td>
+                <td>Monday 18:00-21:00</td>
+            </tr>
+        </table>
+
+        <br>
+        <!-- Πιο σωστός τρόπος υλοποίησης πίνακα!!! thead, tbody -->
+        <table>
+            <!-- Τίτλοι πίνακα -->
+            <thead>
+                <tr>
+                    <th>Lesson</th>
+                    <th>Teacher</th>
+                    <th>Date/Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Java</td>
+                    <td>Teacher</td>
+                    <td>Monday</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Lesson</td>
+                    <th>Teacher</td>
+                    <th>Date/Time</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- Merge 3 κελιών -->
+                    <td colspan="3">Learning Programming</td>
+                    <!-- <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Thanasis</td>
+                    <td>Monday</td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Markos</td>
+                    <td rowspan="2">Friday</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td>Makis</td>
+                    <!-- <td>Friday</td> -->
+                </tr>
+            </tbody>
+        </table>
+        
+        <br>
+
+        <!-- table>tr*3>td*4 -->
+         <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+         </table>
+    </body>
+</html>
