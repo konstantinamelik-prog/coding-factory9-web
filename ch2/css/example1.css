@@ -1,0 +1,8 @@
+ul {
+    background-color: brown;
+}
+
+/* δεν το εφαρμόζει γιατί έχουμε βάλει στο h1 style */
+h1 {
+    color: yellow;
+}

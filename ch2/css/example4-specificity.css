@@ -1,0 +1,18 @@
+/* Το id υπερτερεί του class name */
+#cfText {
+    color: green;
+}
+
+/* Η class name υπερτερεί του γενικού κανόνα */
+/* Με !important, επικαλύπτω το in-line styling */
+.cf-text {
+    color: brown !important;
+}
+
+p {
+    color: red;
+}
+
+p {
+    color: blue;
+}

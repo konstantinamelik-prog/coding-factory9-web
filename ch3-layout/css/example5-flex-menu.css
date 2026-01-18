@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    /* εξαφανίζει το default styling */
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    /* φέρνει τα περιοχόμενα (τα παιδιά) δίπλα δίπλα */
+    display: flex;
+    background-color: #762124;
+}
+
+.nav {
+    background-color: aqua;
+    width: 700px;
+}
+
+.nav > ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: pink;
+    height: 120px;
+}

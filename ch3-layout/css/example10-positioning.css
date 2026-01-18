@@ -1,0 +1,56 @@
+.container {
+    /* position: relative; */
+    width: 800px;
+    height: 400px;
+    background-color: lightblue;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box1 {
+    border: 1px solid black;
+    padding: 80px;
+    background-color: aqua;
+}
+
+.box2 {
+    border: 1px solid black;
+    padding: 80px;
+    background-color: brown;
+}
+
+.box3 {
+    border: 1px solid black;
+    padding: 80px;
+    background-color: green;
+}
+
+.item-relative {
+    position: relative;
+    top: -25px;
+    left: 25px;
+}
+
+.item-absolute {
+    /* τοποθετείται σε συγκεκριμένη θέση */
+    /* με position: relative; το τοποθετεί στα top και left ως προς τον πατέρα, αλλιώς ως προς τον browser */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.item-fixed {
+    /* με fixed, στο scrolάρισμα παραμένει στη θέση ως προς τον browser */
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+}
+
+/* το φέρνει στο προσκήνιο (θα πρέπει να υπάρχει ένα position relative) */
+.z-front {
+    z-index: 1;
+}

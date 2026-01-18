@@ -1,0 +1,83 @@
+body {
+    background-color: lightgray;
+}
+
+p, li {
+    color: red;
+}
+
+/* li {
+columns: red;
+} */
+
+.aueb-logo {
+    border: 3px solid green;
+    width: 400px;
+}
+
+img.aueb-logo {
+    height: auto;
+}
+
+/* όπου δεις πράγραφο που περιέχει το class name aueb-logo κάντο μπλε */
+p.aueb-logo {
+    color: blue;
+}
+
+/* αναιρεί τον προηγούμενο γενικό κανόνα των p παραγράφων, εκτός του από πάνω που είναι specified */
+/* p {
+    color: yellow;
+} */
+
+ul > li {
+    color: blue;
+}
+
+/* βρίσκει την αμέσως επόμενη παράγραφο το h1 */
+h1 + p {
+    color: orange;
+}
+
+/* ΠΡΕΠΕΙ ΝΑ ΓΡΑΦΟΝΤΑΙ ΜΕ ΑΥΤΗ ΤΗ ΣΕΙΡΑ */
+/* χρώμα συνδέσμου πριν τον επισκευτώ */
+.link-cf:link {
+    text-decoration: none;
+    color: black;
+}
+
+/* όταν έχει πατηθεί το link να γίνεται μετά καφέ */
+.link-cf:visited {
+    color: brown;
+}
+
+/* όταν βάζω το ποντίκι πάνω από το link να γίνεται το background πράσινο */
+.link-cf:hover {
+    background-color: green;
+}
+
+/* την ώρα που κλικάρω το link, γίνεται το background κίτρινο */
+.link-cf:focus {
+    outline: none;
+    background-color: yellow;
+}
+
+/* όσο κλικάρω το link, γίνεται το background chocolate */
+.link-cf:active {
+    background-color: chocolate;
+}
+
+#auebLogo {
+    color: lightskyblue;
+}
+
+.border-green-1 {
+    border: 1px solid green;
+}
+
+.border-green-2 {
+    border: 2px solid green;
+}
+
+.text-blue {
+    color: blue;
+}

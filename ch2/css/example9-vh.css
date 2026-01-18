@@ -1,0 +1,9 @@
+.header {
+    height: 200px;
+    border: 1px solid black;
+}
+
+.aueb-img > img {
+    /* να πιάσει το 90% του ύψους της οθόνης μας, μείον τα 200px του .header (95% γιατί προσμετράται και το address bar) */
+    height: calc(95vh - 200px);
+}

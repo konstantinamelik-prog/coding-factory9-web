@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+div[class^="grid"] {
+    border: 1px solid black;
+}
+
+/* .grid-item-1 {
+    background-color: green;
+    /* του λέω να ξεκινησει από την 1η κι να πιάσει 2 στήλες. Μετατοπίζει τα πάντα μία θέση πιο δεξιά */
+    /* grid-column-start: 1;
+    grid-column-end: span 2;
+} */ 
+
+/* .grid-item-1 {
+    background-color: green;
+    grid-column-start: 1;
+    /* σταμάτα πριν τη στήλη 3 */
+    /* grid-column-end: 3;
+} */ 
+
+.grid-item-1 {
+    background-color: green;
+    grid-column: 1 / 3;
+}

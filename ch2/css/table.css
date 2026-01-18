@@ -1,0 +1,22 @@
+th, td, table {
+    border: 1px solid black;
+}
+
+table {
+    /* box-model */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 500px;
+
+    /* Typography */
+    text-align: center;
+
+    /* Decoration */
+    /* για ενιαίο border, όχι διπλό */
+    border-collapse: collapse;
+}
+
+h1 {
+    text-align: center;
+}

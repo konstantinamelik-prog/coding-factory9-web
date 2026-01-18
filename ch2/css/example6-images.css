@@ -1,0 +1,66 @@
+.city {
+    width: 400px;
+    height: auto;
+}
+
+.img-rounded {
+ border-radius: 10px;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+.thumbnail {
+    width: 150px;
+    height: auto;
+    /* border: 5px double rgb(177, 174, 174); Συντόμευση των παρακάτω*/
+    border-width: 5px;
+    border-style: double;
+    border-color: rgb(177, 174, 174);
+}
+
+/* όταν ακουμπάμε την εικόνα, αλλάζει μέγεθος και παίρνει περίγραμμα shadow */
+.thumbnail:hover {
+    box-shadow: 0px 0px 2px 2px rgb(55, 186, 230);
+    width: 155px;
+    height: auto;
+}
+
+.card {
+    width: 600px;
+    border: 1px solid red;
+    box-shadow: 0 0 2px 2px lightgreen;
+    /* στοίχιση κουτιού */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    /* padding για περιθώρια εικόνας από πλαίσιο, 1η τιμή top-bottom, 2η left-right */
+    padding: 10px 20px;
+    /* γραμμένο πλήρως, σειρά clockwise top-right-bottom-left */
+    /* padding: 10px 20px 10px 20px; */
+}
+
+/* Παίρνει το 100% του πλάτους του απο πάνω (του πατέρα του) */
+.card-image {
+    width: 100%;
+}
+
+/* στοίχιση κειμένου εντός πλαισίου, class στο div του κειμένου και: */
+.card-text {
+    text-align: center;
+}
+
+/* background σελίδας */
+.london-bg {
+    height: 800px;
+    background-color: aquamarine;
+    background-image: url('../../img/london.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* η εικόνα μένει σταθερή στη σελίδα και τα υπόλοιπα την υπερκαλύπτουν */
+    background-attachment: fixed;
+}

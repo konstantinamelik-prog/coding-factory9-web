@@ -1,0 +1,66 @@
+body {
+    background-color: lightgray;
+}
+
+/* Containers */
+
+/* 80% της σελίδας, προσαρμλοζεται στο πλάτος του browser */
+.container {
+    border: 1px solid black;
+    width: 80%;
+}
+
+.container-fluid {
+    border: 1px solid black;
+    width: 90%;
+}
+
+.aueb-text {
+    color: antiquewhite;
+    font-size: 1.2rem;
+    /* πόσο bold να είναι τα γράμματα μου */
+    font-weight: 400; 
+}
+
+
+/* Background Colors */
+.bg-dark {
+    background-color: black;
+}
+
+.br-primary {
+    background-color: blue;
+}
+
+/* Text Styling */
+.text-white {
+    color: white;
+}
+
+/* Image Styling */
+.icon-small {
+    width: 150px;
+    height: auto;
+}
+
+/* ListStyling */
+
+/* με > παίνρω τους άμεσους απογόνους και με :first-child το 1ο */
+.courses-wrapper > :first-child {
+    font-weight: bold;
+    color: red;
+}
+
+.courses-wrapper > :last-child {
+    color: green;
+}
+
+/* παίρνω τους περιττούς αριθμούς της λίστας */
+.courses-list > :nth-child(odd) {
+    color: red;
+}
+
+/* παίρνω τους ζυγούς αριθμούς της λίστας */
+.courses-list > :nth-child(even) {
+    color: green;
+}
