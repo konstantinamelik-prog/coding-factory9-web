@@ -39,56 +39,56 @@
         </div>
     </nav>
 
-    <div>
-        <form>
+    <div class="mt-3 mx-2">
+        <form class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <!-- Email -->
-            <div>
-                <label for="fldEmail">Email</label>
-                <div>
-                    <span><i class="bi bi-envelope"></i></span>
-                    <input type="text" id="fldEmail" placeholder="Email">
+            <div class="col-span-2 sm:col-span-1">
+                <label class="text-sm font-medium text-gray-700 mb-1" for="fldEmail">Email</label>
+                <div class="border border-gray-300 rounded-md flex items-center">
+                    <span class="bg-gray-200 px-3 py-2 border-r border-gray-300"><i class="bi bi-envelope"></i></span>
+                    <input class="p-2 flex-1 outline-none" type="text" id="fldEmail" placeholder="Email">
                 </div>
             </div>
 
             <!-- Password -->
-             <div>
-                <label for="fldPassword">Password</label>
-                <input type="password" placeholder="Password" id="fldPassword">
+             <div class="col-span-2 sm:col-span-1">
+                <label class="block text-sm font-medium text-gray-700 mb-1" for="fldPassword">Password</label>
+                <input class="p-2 border border-gray-300 rounded-md w-full outline-none" type="password" placeholder="Password" id="fldPassword">
              </div>
 
              <!-- Address 1 -->
-              <div>
-                <label for="fldAddress">Address</label>
-                <div>
-                    <span><i class="bi bi-building"></i></span>
-                    <input type="text" placeholder="Address" id="fldAddress">
+              <div class="col-span-2">
+                <label class="text-sm font-medium text-gray-700 mb-1" for="fldAddress">Address</label>
+                <div class="border border-gray-300 rounded-md flex items-center">
+                    <span class="bg-gray-200 px-3 py-2 border-r border-gray-300"><i class="bi bi-building"></i></span>
+                    <input class="p-2 flex-1 outline-none" type="text" placeholder="Address" id="fldAddress">
                 </div>
               </div>
 
               <!-- City -->
-               <div>
-                <label for="fldCity">City</label>
-                <input type="text" id="fldCity" placeholder="City">
+               <div class="col-span-2 sm:col-span-1">
+                <label class="block text-sm font-medium text-gray-700 mb-1" for="fldCity">City</label>
+                <input class="w-full border border-gray-300 rounded-md p-2 outline-none" type="text" id="fldCity" placeholder="City">
                </div>
 
                <!-- State -->
-               <div>
-                <label for="fldState">State</label>
-                <select id="fldState">
+               <div  class="col-span-2 sm:col-span-1">
+                <label class="block text-sm font-medium text-gray-700 mb-1" for="fldState">State</label>
+                <select class="w-full border border-gray-300 rounded-md p-2" id="fldState">
                     <option value="">...</option>
                     <option value="">...</option>
                 </select>
                </div>
 
                <!-- Checkbox -->
-                <div>
+                <div class="col-span-2">
                     <input type="checkbox" id="fldAgree">
                     <label for="fldAgree">I Agree</label>
                 </div>
 
                 <!-- Button -->
-                 <div>
-                    <button type="submit">Submit</button>
+                 <div class="col-span-2">
+                    <button class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600" type="submit">Submit</button>
                  </div>
 
         </form>
